@@ -1,0 +1,13 @@
+generator photon {
+  provider = "photonjs"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:dev.db"
+}
+
+model GameState {
+  id    Int @id
+  ticks Int
+}
